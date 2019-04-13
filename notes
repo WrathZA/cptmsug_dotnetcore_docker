@@ -1,0 +1,41 @@
+
+Points
+
+- Think of docker as a process. lightweight and fast
+
+- Describe difference between docker and a VM
+
+Outline
+
+- Who you are
+- What you're talking about
+
+- What is docker?
+- WHY Docker?
+-- Don't need to run an application and it's dependecies, you only need to know how to run a Containers
+-- Running a container is the same regardless of whats in the the container
+-- Simplifies deployment and pushes dependecy issues on "install" to CI process or developers
+-- Quickly and easily run applications/services that were difficult to install or setup. (show mssql)
+
+
+- How is docker different from VMs
+- Show how fast docker is (MSSQL boot up)
+- Explain docker repos
+
+- Containers enable microservices
+- What are microservices (stateless etc)
+
+- What is dotnet core?
+- How is it different from .net framework
+
+- Docker compose / K8
+
+- Example project
+-- API, a Service, Swagger? and xunit tests
+
+- Show build on docker
+-- idemptotent (pulling external deps)
+-- show different images for build and deployment
+
+
+-- show create universe example.
