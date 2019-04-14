@@ -55,7 +55,19 @@ Docker concepts
 - What are microservices (stateless etc)
 
 What is dotnet core?
+
+
 How is it different from .net framework
+- Open Source
+- Cross Platform
+- CLI 
+- Is the future.
+- Modular
+- high performance compared to full framework.
+- monoliths versus services
+
+
+
 
 WTF is Kubernetes?
 
