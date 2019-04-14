@@ -11,24 +11,53 @@ Outline
 - What you're talking about
 
 - What is docker?
+-- Containers are isolated from each other and bundle their own application,[8] tools, libraries and configuration files; they can communicate with each other through well-defined channels. 
+-- Containers are created from images that specify their precise contents.
+--- DIVE?
+-- 
+
 - WHY Docker?
 -- Don't need to run an application and it's dependecies, you only need to know how to run a Containers
 -- Running a container is the same regardless of whats in the the container
 -- Simplifies deployment and pushes dependecy issues on "install" to CI process or developers
 -- Quickly and easily run applications/services that were difficult to install or setup. (show mssql)
+-- Docker is hotter than hot because it makes it possible to get far more apps running on the same old servers and it also makes it very easy to package and ship programs
+-- Docker enables developers to easily pack, ship, and run any application as a lightweight, portable, self-sufficient container, which can run virtually anywhere. 
+-- Containers gives you instant application portability.
+-- distributed in an effective, standardized, and repeatable way
+-- Docker containers are easy to deploy in a cloud. 
+-- Specifically, for CI/CD Docker makes it possible to set up local development environments that are exactly like a live server; run multiple development environments from the same host with unique software, operating systems, and configurations; test projects on new or different servers; and allow anyone to work on the same project with the exact same settings, regardless of the local host environment. This enables developers to run the test suites, which are vital to CI/CD, to quickly see if a newly made change works properly.
+
+Container History
+- been aroucnd since 2000 with BSD Jail.
+- chroot has existed since the 1970s
+- Solaris Containers (chroot on steriods)
+- LXC (2008) is an operating-system-level virtualization method for running multiple isolated Linux systems (containers) on a control host using a single Linux kernel.
+
+- How is docker different from VMs (https://www.aquasec.com/wiki/display/containers/Docker+Containers+vs.+Virtual+Machines)
+-- VMs based on emulating virtual hardware. That means they're fat in terms of system requirements
+-- Containers, however, use shared operating systems. This means they are much more efficient than hypervisors in systeExplain docker m resource terms. Instead of virtualizing hardware, containers rest on top of a single Linux instance
 
 
-- How is docker different from VMs
 - Show how fast docker is (MSSQL boot up)
-- Explain docker repos
 
+
+Docker concepts
+- images
+- containers
+- registaries
+- volumes
+- compose
+-- group containers into on one "applicationn"
+- swarm
+-- group multiple docker engines into a single engine
 - Containers enable microservices
 - What are microservices (stateless etc)
 
-- What is dotnet core?
-- How is it different from .net framework
+What is dotnet core?
+How is it different from .net framework
 
-- Docker compose / K8
+WTF is Kubernetes?
 
 - Example project
 -- API, a Service, Swagger? and xunit tests
