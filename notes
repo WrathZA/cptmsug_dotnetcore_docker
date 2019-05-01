@@ -1,16 +1,40 @@
 
-Points
+Next Steps - build demo app
 
-- Think of docker as a process. lightweight and fast
+What is this talk about?
 
-- Describe difference between docker and a VM
+- It's a life goal of mine to never touch IIS again.
+- This had made my life so much easier
+- "cloud-native" 
+
+Why?
+
+- Isolated from server and operating system dependencies
+- The technolgy removes complexity and makes it easier to deliver. (even into the Enterprise)
+- Doing dev-ops in team (culture not product)
+
+
+Point
 
 Outline
 
 - Who you are
 - What you're talking about
+- Docker Overview
+- Container Overview
+- dotnet core versus full framework
+- Demo
+- Create new app (or one I baked earlier)
+-- Microservice?
+-- 2x apis (one with MSSQL)
+-- Ocelot
+-- Swagger
+-- xunit?
+- Build the docker file for each? 
+- bonus (Kubernetes)
 
 - What is docker?
+-- Think of docker as a process. lightweight and fast
 -- Containers are isolated from each other and bundle their own application,[8] tools, libraries and configuration files; they can communicate with each other through well-defined channels. 
 -- Containers are created from images that specify their precise contents.
 --- DIVE?
@@ -67,16 +91,14 @@ How is it different from .net framework
 - monoliths versus services
 
 
-
-
 WTF is Kubernetes?
 
 - Example project
 -- API, a Service, Swagger? and xunit tests
 
+
 - Show build on docker
 -- idemptotent (pulling external deps)
 -- show different images for build and deployment
-
 
 -- show create universe example.
