@@ -14,7 +14,7 @@ namespace NorthWind.Data.Entities
         public string TerritoryDescription { get; set; }
         public int RegionId { get; set; }
 
-        public virtual Region Region { get; set; }
-        public virtual ICollection<EmployeeTerritories> EmployeeTerritories { get; set; }
+        public Region Region { get; set; }
+        public ICollection<EmployeeTerritories> EmployeeTerritories { get; set; }
     }
 }

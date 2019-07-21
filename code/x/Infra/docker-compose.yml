@@ -18,6 +18,14 @@ services:
     depends_on:
       - mssql
 
+  northwind-api:
+    build: 
+      context: ../Northwind.Project
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Docker
+    depends_on:
+      - mssql
+
 volumes:
   northwindvolume:
     external:

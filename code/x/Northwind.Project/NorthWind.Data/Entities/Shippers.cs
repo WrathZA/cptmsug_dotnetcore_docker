@@ -14,6 +14,6 @@ namespace NorthWind.Data.Entities
         public string CompanyName { get; set; }
         public string Phone { get; set; }
 
-        public virtual ICollection<Orders> Orders { get; set; }
+        public ICollection<Orders> Orders { get; set; }
     }
 }

@@ -4,13 +4,13 @@ using Microsoft.EntityFrameworkCore.Metadata;
 
 namespace NorthWind.Data.Entities
 {
-    public partial class DbContext : DbContext
+    public partial class NorthwindDbContext : DbContext
     {
-        public DbContext()
+        public NorthwindDbContext()
         {
         }
 
-        public DbContext(DbContextOptions<DbContext> options)
+        public NorthwindDbContext(DbContextOptions<NorthwindDbContext> options)
             : base(options)
         {
         }
@@ -19,8 +19,8 @@ namespace NorthWind.Data.Entities
         public virtual DbSet<CustomerCustomerDemo> CustomerCustomerDemo { get; set; }
         public virtual DbSet<CustomerDemographics> CustomerDemographics { get; set; }
         public virtual DbSet<Customers> Customers { get; set; }
-        public virtual DbSet<EmployeeTerritories> EmployeeTerritories { get; set; }
         public virtual DbSet<Employees> Employees { get; set; }
+        public virtual DbSet<EmployeeTerritories> EmployeeTerritories { get; set; }
         public virtual DbSet<OrderDetails> OrderDetails { get; set; }
         public virtual DbSet<Orders> Orders { get; set; }
         public virtual DbSet<Products> Products { get; set; }
@@ -29,19 +29,8 @@ namespace NorthWind.Data.Entities
         public virtual DbSet<Suppliers> Suppliers { get; set; }
         public virtual DbSet<Territories> Territories { get; set; }
 
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        {
-            if (!optionsBuilder.IsConfigured)
-            {
-#warning To protect potentially sensitive information in your connection string, you should move it out of source code. See http://go.microsoft.com/fwlink/?LinkId=723263 for guidance on storing connection strings.
-                optionsBuilder.UseSqlServer("server=127.0.0.1,1433;database=Northwind;user=sa;password=yourStrong(!)Password");
-            }
-        }
-
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.HasAnnotation("ProductVersion", "2.2.6-servicing-10079");
-
             modelBuilder.Entity<Categories>(entity =>
             {
                 entity.HasKey(e => e.CategoryId);
@@ -143,30 +132,6 @@ namespace NorthWind.Data.Entities
                 entity.Property(e => e.Region).HasMaxLength(15);
             });
 
-            modelBuilder.Entity<EmployeeTerritories>(entity =>
-            {
-                entity.HasKey(e => new { e.EmployeeId, e.TerritoryId })
-                    .ForSqlServerIsClustered(false);
-
-                entity.Property(e => e.EmployeeId).HasColumnName("EmployeeID");
-
-                entity.Property(e => e.TerritoryId)
-                    .HasColumnName("TerritoryID")
-                    .HasMaxLength(20);
-
-                entity.HasOne(d => d.Employee)
-                    .WithMany(p => p.EmployeeTerritories)
-                    .HasForeignKey(d => d.EmployeeId)
-                    .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("FK_EmployeeTerritories_Employees");
-
-                entity.HasOne(d => d.Territory)
-                    .WithMany(p => p.EmployeeTerritories)
-                    .HasForeignKey(d => d.TerritoryId)
-                    .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("FK_EmployeeTerritories_Territories");
-            });
-
             modelBuilder.Entity<Employees>(entity =>
             {
                 entity.HasKey(e => e.EmployeeId);
@@ -221,10 +186,33 @@ namespace NorthWind.Data.Entities
                     .HasConstraintName("FK_Employees_Employees");
             });
 
+            modelBuilder.Entity<EmployeeTerritories>(entity =>
+            {
+                entity.HasKey(e => new { e.EmployeeId, e.TerritoryId })
+                    .ForSqlServerIsClustered(false);
+
+                entity.Property(e => e.EmployeeId).HasColumnName("EmployeeID");
+
+                entity.Property(e => e.TerritoryId)
+                    .HasColumnName("TerritoryID")
+                    .HasMaxLength(20);
+
+                entity.HasOne(d => d.Employee)
+                    .WithMany(p => p.EmployeeTerritories)
+                    .HasForeignKey(d => d.EmployeeId)
+                    .OnDelete(DeleteBehavior.ClientSetNull)
+                    .HasConstraintName("FK_EmployeeTerritories_Employees");
+
+                entity.HasOne(d => d.Territory)
+                    .WithMany(p => p.EmployeeTerritories)
+                    .HasForeignKey(d => d.TerritoryId)
+                    .OnDelete(DeleteBehavior.ClientSetNull)
+                    .HasConstraintName("FK_EmployeeTerritories_Territories");
+            });
+
             modelBuilder.Entity<OrderDetails>(entity =>
             {
-                entity.HasKey(e => new { e.OrderId, e.ProductId })
-                    .HasName("PK_Order_Details");
+                entity.HasKey(e => new { e.OrderId, e.ProductId });
 
                 entity.ToTable("Order Details");
 

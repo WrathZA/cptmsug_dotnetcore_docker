@@ -13,6 +13,6 @@ namespace NorthWind.Data.Entities
         public int RegionId { get; set; }
         public string RegionDescription { get; set; }
 
-        public virtual ICollection<Territories> Territories { get; set; }
+        public ICollection<Territories> Territories { get; set; }
     }
 }

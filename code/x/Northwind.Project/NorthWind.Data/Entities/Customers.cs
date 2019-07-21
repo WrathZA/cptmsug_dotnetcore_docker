@@ -23,7 +23,7 @@ namespace NorthWind.Data.Entities
         public string Phone { get; set; }
         public string Fax { get; set; }
 
-        public virtual ICollection<CustomerCustomerDemo> CustomerCustomerDemo { get; set; }
-        public virtual ICollection<Orders> Orders { get; set; }
+        public ICollection<CustomerCustomerDemo> CustomerCustomerDemo { get; set; }
+        public ICollection<Orders> Orders { get; set; }
     }
 }

@@ -31,9 +31,9 @@ namespace NorthWind.Data.Entities
         public int? ReportsTo { get; set; }
         public string PhotoPath { get; set; }
 
-        public virtual Employees ReportsToNavigation { get; set; }
-        public virtual ICollection<EmployeeTerritories> EmployeeTerritories { get; set; }
-        public virtual ICollection<Employees> InverseReportsToNavigation { get; set; }
-        public virtual ICollection<Orders> Orders { get; set; }
+        public Employees ReportsToNavigation { get; set; }
+        public ICollection<EmployeeTerritories> EmployeeTerritories { get; set; }
+        public ICollection<Employees> InverseReportsToNavigation { get; set; }
+        public ICollection<Orders> Orders { get; set; }
     }
 }

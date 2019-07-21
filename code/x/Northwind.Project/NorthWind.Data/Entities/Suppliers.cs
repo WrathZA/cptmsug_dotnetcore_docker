@@ -23,6 +23,6 @@ namespace NorthWind.Data.Entities
         public string Fax { get; set; }
         public string HomePage { get; set; }
 
-        public virtual ICollection<Products> Products { get; set; }
+        public ICollection<Products> Products { get; set; }
     }
 }

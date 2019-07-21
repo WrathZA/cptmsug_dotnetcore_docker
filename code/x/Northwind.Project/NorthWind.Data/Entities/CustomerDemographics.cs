@@ -13,6 +13,6 @@ namespace NorthWind.Data.Entities
         public string CustomerTypeId { get; set; }
         public string CustomerDesc { get; set; }
 
-        public virtual ICollection<CustomerCustomerDemo> CustomerCustomerDemo { get; set; }
+        public ICollection<CustomerCustomerDemo> CustomerCustomerDemo { get; set; }
     }
 }

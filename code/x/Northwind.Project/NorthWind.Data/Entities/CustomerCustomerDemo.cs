@@ -8,7 +8,7 @@ namespace NorthWind.Data.Entities
         public string CustomerId { get; set; }
         public string CustomerTypeId { get; set; }
 
-        public virtual Customers Customer { get; set; }
-        public virtual CustomerDemographics CustomerType { get; set; }
+        public Customers Customer { get; set; }
+        public CustomerDemographics CustomerType { get; set; }
     }
 }
