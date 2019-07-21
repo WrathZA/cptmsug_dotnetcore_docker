@@ -1,9 +1,0 @@
-C:\code\talk\Calc.Service.Project\Calc.Service\bin\Debug\netcoreapp2.1\Calc.Service.deps.json
-C:\code\talk\Calc.Service.Project\Calc.Service\bin\Debug\netcoreapp2.1\Calc.Service.dll
-C:\code\talk\Calc.Service.Project\Calc.Service\bin\Debug\netcoreapp2.1\Calc.Service.pdb
-C:\code\talk\Calc.Service.Project\Calc.Service\obj\Debug\netcoreapp2.1\Calc.Service.csprojAssemblyReference.cache
-C:\code\talk\Calc.Service.Project\Calc.Service\obj\Debug\netcoreapp2.1\Calc.Service.csproj.CoreCompileInputs.cache
-C:\code\talk\Calc.Service.Project\Calc.Service\obj\Debug\netcoreapp2.1\Calc.Service.AssemblyInfoInputs.cache
-C:\code\talk\Calc.Service.Project\Calc.Service\obj\Debug\netcoreapp2.1\Calc.Service.AssemblyInfo.cs
-C:\code\talk\Calc.Service.Project\Calc.Service\obj\Debug\netcoreapp2.1\Calc.Service.dll
-C:\code\talk\Calc.Service.Project\Calc.Service\obj\Debug\netcoreapp2.1\Calc.Service.pdb
