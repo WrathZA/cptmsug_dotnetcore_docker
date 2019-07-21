@@ -1,0 +1,24 @@
+# see: https://docs.docker.com/compose/
+
+version: '3.7'
+
+services:
+  
+  mssql:
+    image: microsoft/mssql-server-linux
+    env_file: ./sql.env
+    ports: 
+      - 1433:1433
+    volumes:
+      - northwindvolume:/var/opt/mssql
+
+  northwind-dbup:
+    build: 
+      context: ../Northwind.Project/NorthWind.Data.Migrations
+    depends_on:
+      - mssql
+
+volumes:
+  northwindvolume:
+    external:
+      name: northwind-shared-volume

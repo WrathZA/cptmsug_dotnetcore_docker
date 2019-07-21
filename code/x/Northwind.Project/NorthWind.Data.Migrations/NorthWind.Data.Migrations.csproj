@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Scripts\instnwnd.sql" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Scripts\instnwnd.sql" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="dbup" Version="4.2.0" />
+  </ItemGroup>
+
+</Project>

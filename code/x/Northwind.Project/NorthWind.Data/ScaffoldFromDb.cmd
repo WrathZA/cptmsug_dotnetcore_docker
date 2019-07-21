@@ -1,0 +1,1 @@
+dotnet ef dbcontext scaffold "server=127.0.0.1,1433;database=Northwind;user=sa;password=yourStrong(!)Password" Microsoft.EntityFrameworkCore.SqlServer -c DbContext -o \Entities --context-dir \  --force
