@@ -1,0 +1,17 @@
+C:\code\talk\Calc.Service.Project\Calc.Service.Api\bin\Debug\netcoreapp2.1\Calc.Service.Api.deps.json
+C:\code\talk\Calc.Service.Project\Calc.Service.Api\bin\Debug\netcoreapp2.1\Calc.Service.Api.runtimeconfig.json
+C:\code\talk\Calc.Service.Project\Calc.Service.Api\bin\Debug\netcoreapp2.1\Calc.Service.Api.runtimeconfig.dev.json
+C:\code\talk\Calc.Service.Project\Calc.Service.Api\bin\Debug\netcoreapp2.1\Calc.Service.Api.dll
+C:\code\talk\Calc.Service.Project\Calc.Service.Api\bin\Debug\netcoreapp2.1\Calc.Service.Api.pdb
+C:\code\talk\Calc.Service.Project\Calc.Service.Api\obj\Debug\netcoreapp2.1\Calc.Service.Api.csprojAssemblyReference.cache
+C:\code\talk\Calc.Service.Project\Calc.Service.Api\obj\Debug\netcoreapp2.1\Calc.Service.Api.csproj.CoreCompileInputs.cache
+C:\code\talk\Calc.Service.Project\Calc.Service.Api\obj\Debug\netcoreapp2.1\Calc.Service.Api.RazorAssemblyInfo.cache
+C:\code\talk\Calc.Service.Project\Calc.Service.Api\obj\Debug\netcoreapp2.1\Calc.Service.Api.RazorAssemblyInfo.cs
+C:\code\talk\Calc.Service.Project\Calc.Service.Api\obj\Debug\netcoreapp2.1\Calc.Service.Api.AssemblyInfoInputs.cache
+C:\code\talk\Calc.Service.Project\Calc.Service.Api\obj\Debug\netcoreapp2.1\Calc.Service.Api.AssemblyInfo.cs
+C:\code\talk\Calc.Service.Project\Calc.Service.Api\obj\Debug\netcoreapp2.1\Calc.Service.Api.RazorTargetAssemblyInfo.cache
+C:\code\talk\Calc.Service.Project\Calc.Service.Api\obj\Debug\netcoreapp2.1\Calc.Service.Api.dll
+C:\code\talk\Calc.Service.Project\Calc.Service.Api\obj\Debug\netcoreapp2.1\Calc.Service.Api.pdb
+C:\code\talk\Calc.Service.Project\Calc.Service.Api\bin\Debug\netcoreapp2.1\Calc.Service.dll
+C:\code\talk\Calc.Service.Project\Calc.Service.Api\bin\Debug\netcoreapp2.1\Calc.Service.pdb
+C:\code\talk\Calc.Service.Project\Calc.Service.Api\obj\Debug\netcoreapp2.1\Calc.Service.Api.csproj.CopyComplete
