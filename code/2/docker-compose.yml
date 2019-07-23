@@ -1,0 +1,21 @@
+# see: https://docs.docker.com/compose/
+
+version: '3.7'
+
+services:
+
+  calc-service:
+    build: 
+      context: ./Calc.Service.Project
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Docker
+
+  frontend:
+    build: 
+      context: ./Frontend
+
+  proxy:
+    build: 
+      context: ./Proxy
+    ports:
+      - 5060:80
