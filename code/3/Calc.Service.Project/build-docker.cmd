@@ -1,0 +1,1 @@
+docker build -t ctmsug/p1:test --rm .

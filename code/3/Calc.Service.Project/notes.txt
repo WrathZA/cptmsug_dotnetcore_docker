@@ -1,0 +1,4 @@
+curl http://localhost:8080/api/basicmaths/
+
+// Bash
+curl -X POST http://localhost:8080/api/basicmaths/ -H 'content-type: application/json' -d '{"a":1, "b":2}'

@@ -1,0 +1,1 @@
+docker run -p 8080:8080 -e ASPNETCORE_ENVIRONMENT=Docker ctmsug/p1:test
