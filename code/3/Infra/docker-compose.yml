@@ -26,6 +26,22 @@ services:
     depends_on:
       - mssql
 
+  calc-service:
+    build: 
+      context: ../Calc.Service.Project
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Docker
+
+  frontend:
+    build: 
+      context: ../Frontend
+
+  proxy:
+    build: 
+      context: ../Proxy
+    ports:
+      - 5060:80
+
 volumes:
   northwindvolume:
     external:
