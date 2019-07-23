@@ -1,0 +1,32 @@
+{
+  "ReRoutes": [
+    {
+      "UpstreamPathTemplate": "/api/calc-api/{url}",
+      "UpstreamHttpMethod": [],
+
+      "DownstreamPathTemplate": "/api/{url}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "calc-service",
+          "Port": 8080
+        }
+      ]
+    },
+    {
+      "UpstreamPathTemplate": "/api/northwind-api/{url}",
+      "UpstreamHttpMethod": [],
+
+      "DownstreamPathTemplate": "/api/{url}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "northwind-api",
+          "Port": 8080
+        }
+      ]
+    }
+  ],
+  "GlobalConfiguration": {
+  }
+}

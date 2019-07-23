@@ -31,6 +31,12 @@ services:
       context: ../Calc.Service.Project
     environment:
       - ASPNETCORE_ENVIRONMENT=Docker
+  
+  gateway: 
+    build: 
+      context: ../OcelotGateway
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Docker
 
   frontend:
     build: 

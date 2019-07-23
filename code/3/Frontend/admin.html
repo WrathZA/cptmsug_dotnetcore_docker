@@ -7,6 +7,20 @@
     <title>Document</title>
 </head>
 <body>
-    Oh shit, I hope we don't get hacked.
+    <p>Oh shit, I hope we don't get hacked.</p>
+    <input id="btn" type="button" value="Get Customers" />
+    <div id="txt"></div>
+
+    <script>
+        document.getElementById("btn").addEventListener("click", function () {
+            fetch("http://localhost:5060/api/northwind-api/customer").then(res => {
+                if (res.ok) {
+                    res.json().then(v => {
+                        document.getElementById('txt').innerHTML = JSON.stringify(v, null, 2);
+                    })
+                }
+            })
+        })
+    </script>
 </body>
 </html>
