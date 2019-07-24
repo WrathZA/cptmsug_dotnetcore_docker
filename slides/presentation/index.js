@@ -193,6 +193,41 @@ export default class Presentation extends React.Component {
 
         <Slide transition={["fade"]} bgColor="secondary" textColor="primary">
           <Heading margin={"0px auto 20px"} size={1} fill caps lineHeight={1} textColor="tertiary">
+            How is .net core different from .NET framework 
+          </Heading>
+          <div style={{ paddingLeft: "25px", width: '80%', float: 'right' }}>
+            <List >
+              <Appear>
+                <ListItem padding={"10px 0"} textSize={56}>Open Source</ListItem>
+              </Appear>
+              <Appear>
+                <ListItem padding={"10px 0"} textSize={56}>Cross Platform</ListItem>
+              </Appear>
+              <Appear>
+                <ListItem padding={"10px 0"} textSize={56}>CLI</ListItem>
+              </Appear>
+              <Appear>
+                <ListItem padding={"10px 0"} textSize={56}>Is the future.</ListItem>
+              </Appear>
+              <Appear>
+                <ListItem padding={"10px 0"} textSize={56}>high performance compared to full framework</ListItem>
+              </Appear>
+              <Appear>
+                <ListItem padding={"10px 0"} textSize={56}>Monoliths versus Services</ListItem>
+              </Appear>
+            </List>
+          </div>
+          <Notes>
+            <ul>
+              <li>Running a container is the same regardless of whats in the the container</li>
+              <li>Makes it possible to get far more apps running on the same old servers</li>
+              <li>run multiple development environments from the same host with unique software, operating systems</li>
+            </ul>
+          </Notes>
+        </Slide>
+
+        <Slide transition={["fade"]} bgColor="secondary" textColor="primary">
+          <Heading margin={"0px auto 20px"} size={1} fill caps lineHeight={1} textColor="tertiary">
             Why Docker?
           </Heading>
           <div style={{ paddingLeft: "25px" }}>
